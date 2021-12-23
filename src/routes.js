@@ -1,6 +1,6 @@
-import App from './App';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import App from './App'
+import React from 'react'
+import ReactDOM from 'react-dom'
 import Contato from './pages/Contato/index';
 import SobreNos from './pages/SobreNos/index';
 import {BrowserRouter, Routes, Route} from "react-router-dom";

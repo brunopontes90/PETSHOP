@@ -1,12 +1,12 @@
 import React from "react";
-import Routes from "./routes_old_file";
 import Main from "./pages/Main/index";
-import { Link } from "react-router-dom";
+import Menu from "./pages/Layouts/menu";
 
-function App() {
+export default function App() {
   return (
-   <Main/>
+    <div>
+      <Menu/>
+      <Main/>
+    </div>
   );
-}
-
-export default App;
+};

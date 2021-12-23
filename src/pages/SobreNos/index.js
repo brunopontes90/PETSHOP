@@ -1,8 +1,12 @@
 import React from "react";
+import Menu from "../Layouts/menu";
 
 export default function SobreNos()
 {
     return(
-        <h1>Pagina SobreNos</h1>
+        <div>
+            <Menu/>
+            <h1>Pagina SobreNos</h1>
+        </div>
     );
 }

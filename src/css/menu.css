@@ -26,6 +26,6 @@ li{
 }
 
 .link:hover{
-    color: var(--blue);
     font-size: 18pt;
+    color: var(--blue);
 }

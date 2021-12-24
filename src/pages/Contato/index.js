@@ -5,15 +5,16 @@ import { Input, Button } from "antd";
 
 const { TextArea } = Input;
 
-export default function Main()
+export default function Contato()
 {
     return(
         <div>
             <Menu/>
 
-            <h1>Fale Conosco</h1>
-
             <div id="form">
+            
+                <h1>Fale Conosco</h1>
+
                 <form method="POST" action="mensagem">
                     <div>
                         <label>Nome:</label>

@@ -1,0 +1,25 @@
+:root{
+    --black: #000000;
+    --white: #E6E6E6;
+    --orange: #FF8000;
+}
+
+#mensagem_sobre_nos{
+    opacity: 0.9;
+    padding: 10px;
+    margin-top: 12%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0px 2px 5px 1px var(--black);
+}
+
+strong{
+    font-size: 16pt;
+}
+
+.sobre_nos{
+    font-size: 16pt;
+}

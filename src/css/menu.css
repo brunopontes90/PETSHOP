@@ -8,9 +8,9 @@ ul{
     display: flex;
     padding: 15px;
     margin-top: 0px;
-    background-image: url('../image/back-menu-img.jpg');
     list-style-type: none;
     background-color: var(--gray);
+    background-image: url('../image/back-menu-img.jpg');
 }
 
 li{

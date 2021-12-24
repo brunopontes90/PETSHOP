@@ -10,7 +10,7 @@ export default function Main()
     return(
         <div>
             <Menu/>
-                        
+
             <h1>Fale Conosco</h1>
 
             <div id="form">
@@ -22,6 +22,10 @@ export default function Main()
                     <div>
                         <label>Endereço:</label>
                         <Input size="large" placeholder="Endereço Completo" required/>
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <Input size="large" placeholder="email@email.com" required/>
                     </div>
                     <div id="select">
                         <label>Tipo:</label>

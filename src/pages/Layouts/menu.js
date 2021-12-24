@@ -1,4 +1,5 @@
 import React from "react";
+import "../../css/menu.css";
 import { Link } from "react-router-dom";
 
 export default function Menu(){
@@ -6,13 +7,16 @@ export default function Menu(){
         <header>
             <ul>
                 <li>
-                    <Link to="/">Página Main</Link>
+                    <Link to="/" class="link">Home</Link>
                 </li>
                 <li>
-                    <Link to="/contato">Página de contatos</Link>
+                    <Link to="/contato" class="link">Contatos</Link>
                 </li>
                 <li>
-                <Link to="/sobre-nos">Página sobre nos</Link>
+                    <Link to="/sobre-nos" class="link">Sobre Nós</Link>
+                </li>
+                <li>
+                    <Link to="/mensagem" class="link">Mensagem</Link>
                 </li>
             </ul>
         </header>

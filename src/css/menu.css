@@ -1,0 +1,31 @@
+:root{
+    --blue: #0000FF;
+    --black: #000000;
+    --gray: #BDBDBD;
+}
+
+ul{
+    display: flex;
+    padding: 15px;
+    margin-top: 0px;
+    background-image: url('../image/back-menu-img.jpg');
+    list-style-type: none;
+    background-color: var(--gray);
+}
+
+li{
+    margin: auto;
+    font-weight: bold;
+}
+
+.link{
+    margin: auto;
+    font-size: 15pt;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--blue);
+    font-size: 18pt;
+}

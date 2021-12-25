@@ -7,6 +7,12 @@ const { TextArea } = Input;
 
 export default function Contato()
 {
+
+    function teste()
+    {
+        console.log('Botao clicado!');
+    }
+
     return(
         <div>
             <Menu/>
@@ -15,7 +21,7 @@ export default function Contato()
             
                 <h1>Fale Conosco</h1>
 
-                <form method="POST" action="mensagem">
+                <form method="POST" method="./Layouts/mensagem">
                     <div>
                         <label><span class="obrigatorio">*</span>Nome:</label>
                         <Input size="large" placeholder="Nome Completo" required/>
@@ -41,10 +47,10 @@ export default function Contato()
                             <label>Mensagem</label>
                         </div>
                         <div>
-                            <TextArea rows={10} cols={100} />
+                            <TextArea rows={10} cols={50} />
                         </div>
                     </div>
-                    <Button type="primary" htmlType="submit">Enviar</Button>
+                    <Button type="primary" onClick={teste()}>Enviar</Button>
                 </form>
             </div>
         </div>

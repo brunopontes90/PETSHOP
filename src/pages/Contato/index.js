@@ -2,15 +2,34 @@ import React from "react";
 import "../../css/contato.css";
 import Menu from "../Layouts/menu";
 import { Input, Button } from "antd";
+import { useNavigate } from "react-router";
 
 const { TextArea } = Input;
 
 export default function Contato()
 {
 
-    function teste()
+    let navigate = useNavigate();
+
+    const redirect = () => 
     {
-        console.log('Botao clicado!');
+        let nome = document.getElementById("nome");
+        let endereco = document.getElementById("endereco");
+        let email = document.getElementById("email");
+
+
+        if(nome.value == '' && endereco.value == '' && email.value == '')
+        {
+            alert('Preencha todos os campos!');
+            nome.focus();
+            endereco.focus();
+            email.focus();
+
+        }else{
+            // window.location.href = "mensagem";
+            navigate('/mensagem');
+
+        }
     }
 
     return(
@@ -24,15 +43,15 @@ export default function Contato()
                 <form method="POST" method="./Layouts/mensagem">
                     <div>
                         <label><span class="obrigatorio">*</span>Nome:</label>
-                        <Input size="large" placeholder="Nome Completo" required/>
+                        <Input size="large" id="nome" class="input" placeholder="Nome Completo" required/>
                     </div>
                     <div>
                         <label><span class="obrigatorio">*</span>Endereço:</label>
-                        <Input size="large" placeholder="Endereço Completo" required/>
+                        <Input size="large" id="endereco" class="input" placeholder="Endereço Completo" required/>
                     </div>
                     <div>
                         <label><span class="obrigatorio">*</span>Email:</label>
-                        <Input size="large" placeholder="email@email.com" required/>
+                        <Input size="large" id="email" class="input" placeholder="email@email.com" required/>
                     </div>
                     <div id="select">
                         <label>Tipo:</label>
@@ -50,7 +69,7 @@ export default function Contato()
                             <TextArea rows={10} cols={50} />
                         </div>
                     </div>
-                    <Button type="primary" onClick={teste()}>Enviar</Button>
+                    <Button type="primary" onClick={redirect}>Enviar</Button>
                 </form>
             </div>
         </div>

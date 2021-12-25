@@ -2,11 +2,13 @@
     --black: #000000;
     --white: #E6E6E6;
     --orange: #FF8000;
+    --red: #FF0000;
 }
 
 body{
     background-image: url('../image/back-main-img.jpg');
 }
+
 
 h1{
     color: var(--orange);

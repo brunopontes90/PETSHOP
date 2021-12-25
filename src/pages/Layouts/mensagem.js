@@ -11,7 +11,7 @@ export default function Mensagem()
                 <p id="mensagem">
                     Agradecemos a sua preferencia.
                 </p>
-                <Link id="btn" to="/contato">Voltar a Home</Link>
+                <Link id="btn" to="/">Voltar a Home</Link>
             </div>
         </div>
         

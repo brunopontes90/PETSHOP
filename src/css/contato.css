@@ -11,6 +11,10 @@ h1{
     text-transform: uppercase;
 }
 
+.obrigatorio{
+    color: var(--red);
+}
+
 #form{
     opacity: 0.9;
     padding: 15px;

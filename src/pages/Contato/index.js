@@ -17,15 +17,15 @@ export default function Contato()
 
                 <form method="POST" action="mensagem">
                     <div>
-                        <label>Nome:</label>
+                        <label><span class="obrigatorio">*</span>Nome:</label>
                         <Input size="large" placeholder="Nome Completo" required/>
                     </div>
                     <div>
-                        <label>Endereço:</label>
+                        <label><span class="obrigatorio">*</span>Endereço:</label>
                         <Input size="large" placeholder="Endereço Completo" required/>
                     </div>
                     <div>
-                        <label>Email:</label>
+                        <label><span class="obrigatorio">*</span>Email:</label>
                         <Input size="large" placeholder="email@email.com" required/>
                     </div>
                     <div id="select">

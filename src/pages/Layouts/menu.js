@@ -15,9 +15,9 @@ export default function Menu(){
                 <li>
                     <Link to="/sobre-nos" class="link">Sobre Nós</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/mensagem" class="link">Mensagem</Link>
-                </li>
+                </li> */}
             </ul>
         </header>
     )

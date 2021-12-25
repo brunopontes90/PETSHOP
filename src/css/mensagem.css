@@ -1,0 +1,41 @@
+:root{
+    --black: #000000;
+    --red: #FF0000;
+    --blue: #0000FF;
+    --white: #FFFFFF;
+}
+
+#body{
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 250px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+#mensagem{
+    font-size: 13pt;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#btn{
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--white);
+    border-radius: 10px;
+    margin-bottom: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--blue);
+}
+
+#btn:hover{
+    color: var(--red);
+    background-color: var(--black);
+}
